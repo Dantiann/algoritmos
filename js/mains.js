@@ -170,8 +170,16 @@ function boletin() {
     materia  = prompt("Ingrese la asignatura: ");
     alert("Ingrese las notas con rango de 1 a 10. Nota superior a 6.1 Aprueba");
 
-    for (let i = 1; i <=7; i++) {
-        notas=parseFloat(prompt("Digite la nota "+i+":"));
+    for (let i = 1; i <=7; i++){
+        while(true){
+            notas = (parseFloat(prompt("digite la nota: " + i)));
+            
+            if (notas >=1 && notas <=10)
+            break
+            
+            else
+            alert("Valor incorrecto. Las notas están dentro del rango de 1 a 10");
+        }
         suma += notas;
       }
     
