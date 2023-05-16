@@ -168,6 +168,7 @@ function boletin() {
 
     nombre  = prompt("Ingrese el nombre del estudiante: ");
     materia  = prompt("Ingrese la asignatura: ");
+    alert("Ingrese las notas con rango de 1 a 10. Nota superior a 6.1 Aprueba");
 
     for (let i = 1; i <=7; i++) {
         notas=parseFloat(prompt("Digite la nota "+i+":"));
