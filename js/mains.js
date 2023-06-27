@@ -63,7 +63,7 @@ function menorQ(){
     B=parseInt(prompt("Digite el segundo número"));
     C=parseInt(prompt("Digite el tercer número"));
 
-    if (A==B && A==C &&  B==C){
+    if (A==B || A==C ||  B==C){
         alert(A + ", " +  B + ", " + C + " Los números ingresados son iguales");
     }
     else if (A<B && A<C){
