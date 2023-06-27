@@ -63,17 +63,17 @@ function menorQ(){
     B=parseInt(prompt("Digite el segundo número"));
     C=parseInt(prompt("Digite el tercer número"));
 
-    if (A==B || A==C ||  B==C){
+     if (A==B && A==C &&  B==C){
         alert(A + ", " +  B + ", " + C + " Los números ingresados son iguales");
     }
-    else if (A<B && A<C){
+    else if (A<=B && A<C){
         alert(A + ", " +  B + ", " + C + " El menor de los tres números ingresados es: " + A);
     }
-    else if (B<A && B<C){
-        alert(A + ", " +  B + ", " + C + " El menor de los tres números ingresados es: " + B);
+    else if (C<=A && C<B){
+        alert(A + ", " +  B + ", " + C + " El menor de los tres números ingresados es: " + C);
     }
     else {
-        alert(A + ", " +  B + ", " + C + " El menor de los tres números ingresados es: " + C);
+        alert(A + ", " +  B + ", " + C + " El menor de los tres números ingresados es: " + B);
     }
 }
 
